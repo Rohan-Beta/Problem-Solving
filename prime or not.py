@@ -5,13 +5,19 @@ import math
 n = int(input("Enter a number: "))
 num = int(math.sqrt(n))
 
-# print(num)
+flag = 0
 
-if(num == 2 or num == 3 or num == 5 or num == 7) :
-    print("Prime Number")
+if(n == 1):
+    print("no")
     
-elif(num % 2 == 0 or num % 3 == 0 or num % 5 == 0 or num % 7 == 0) :
-    print("Not prime")
+elif(n > 1):
+    for i in range(2 , n):
+        if(n % i == 0):
+            flag = 1
+            
+            break
         
-else:
-    print("prime")
+    if(flag):
+        print("no")
+    else:
+        print("yes")

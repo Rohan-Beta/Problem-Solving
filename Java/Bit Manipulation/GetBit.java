@@ -14,10 +14,10 @@ class Firstclass {
         int bitmask = 1 << pos;
 
         if((bitmask & n) == 0) {
-            System.out.print("zero");
+            System.out.print("bit is zero");
         }
         else {
-            System.out.print("one");
+            System.out.print("bit is one");
         }
     }
 }

@@ -10,9 +10,9 @@ class Firstclass {
         int pos = 2;
 
         int bitmask = 1 << pos;
-        int n1 = ~(bitmask);
+        int not = ~(bitmask);
 
-        int newNum = n1 & n;
+        int newNum = not & n;
         System.out.print(newNum);
     }
 }
